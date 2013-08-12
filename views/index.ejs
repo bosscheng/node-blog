@@ -1,0 +1,30 @@
+<%- include header %>
+<% posts.forEach(function(post, index){ %>
+<div class="hero-unit">
+    <h3><a href="/u/<%= post.name%>/<%= post.time.day %>/<%= post.title%>"><%= post.title %></a></h3>
+
+    <div class="article-body">
+        <p><%- post.post %></p>
+
+    </div>
+
+    <hr>
+    <div class="article-author">
+        <p class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+        <div>
+            <span class="label label-important">博主：</span>&nbsp; &nbsp;<a href="/u/<%= post.name%>"><%= post.name %></a> |
+            <span>日期：</span><%= post.time.day %> |
+            <span>标签：</span>
+            <% if(post.tags){%>
+            <% post.tags.forEach(function(tag, index){ %>
+            <% if(tag.tag){ %>
+            <a class="tag" href="/tags/<%= tag.tag %>"><%= tag.tag %></a>
+            <% } %>
+            <% }) %>
+            <% } %>
+        </div>
+    </div>
+</div>
+<% }) %>
+<%- include paging %>
+<%- include footer %>

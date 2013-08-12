@@ -1,0 +1,6 @@
+app.js：启动文件
+packag.json: 存储着工程的信息以及所需的依赖模块,执行 npm install 更新模块
+node_modules: 存放package.json中安装的模块，
+public: 存放 image js css等文件
+routes：存放路由文件
+views：存放模版文件

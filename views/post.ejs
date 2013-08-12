@@ -1,0 +1,15 @@
+<%- include header %>
+<div class="post-body">
+    <form method="post">
+        <h3>标题：(文章的标题)</h3>
+        <input type="text" name="title" class="input-block-level"/><br/>
+        <h3>标签：(可为空)</h3>
+        <input type="text" name="tag1" />，<input type="text" name="tag2" />，<input type="text" name="tag3" /><br/>
+        <h4>正文：(不能为空)</h4>
+        <textarea name="post" rows="20" cols="100"></textarea><br/>
+        <input type="submit" value="发表" class="btn btn-large btn-primary"/>
+        <a href="/" class="btn btn-large">取消</a>
+    </form>
+</div>
+
+<%- include footer %>

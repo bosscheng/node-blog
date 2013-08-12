@@ -1,0 +1,13 @@
+<%- include header %>
+<div id="article-body">
+    <% posts.forEach(function(post, index){ %>
+    <p><h2><a href="/u/<%= post.name %>/<%= post.time.day %>/<%= post.title %>"><%= post.title %></a></h2>
+    <a href="/u/<%= post.name %>" class="r_head" /></a></p>
+    <p><%- post.post %></p>
+    <hr>
+    <p class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+    <% }) %>
+</div>
+<!-- 添加翻页机制 -->
+<%- include paging %>
+<%- include footer %>

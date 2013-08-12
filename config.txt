@@ -1,0 +1,23 @@
+开启app
+1.切换到 app所在的目录：D:\allWorkspace\WebstormProjects\nodeJsStudy\blog
+2.执行 node app
+
+开启mongodb数据库
+1. 运行脚本
+
+查看数据库中的数据
+1.运行E:\mongodb\bin\mongo.exe文件
+2.执行 use blog
+3.执行 db.users.find()
+
+ps:
+对于数据库操作的 db.users.find()中的 users是一个table
+还有的table有“posts”
+
+更新 package.json文件
+1.切换到 app所在的目录：D:\allWorkspace\WebstormProjects\nodeJsStudy\blog
+2.执行 npm install
+
+
+
+

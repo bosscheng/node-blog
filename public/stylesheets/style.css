@@ -1,0 +1,27 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+.article-body {
+    height: 300px;
+}
+
+#userName {
+    margin-right: 10px;
+}
+
+#article-body ,.container-body{
+    min-height: 740px;
+}
+
+.post-body textarea{
+    width: 1155px;
+}
+.comment-form textarea{
+    width: 600px;
+}
+.nextpage{
+    float: right;
+}

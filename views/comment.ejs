@@ -1,0 +1,68 @@
+<br/>
+<% post.comments.forEach(function(comment, index){ %>
+<p><a href="<%= comment.website %>"><%= comment.name %></a>
+    <span class="info"> 回复于 <%= comment.time %></span></p>
+<p><%- comment.content %></p>
+<% }) %>
+
+<fieldset class="form-horizontal comment-form">
+    <legend>留言</legend>
+    <form method="post">
+        <% if(user){ %>
+        <div class="control-group">
+            <label class="control-label">姓名:</label>
+
+            <div class="controls">
+                <input type="text" name="name" value="<%= user.name %>" class="input-xlarge"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">邮箱:</label>
+
+            <div class="controls">
+                <input type="text" name="email" value="<%= user.email %>" class="input-xlarge"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">网址：</label>
+
+            <div class="controls">
+                <input type="text" name="website" value="/u/<%= user.name %>" class="input-xlarge"/>
+            </div>
+        </div>
+        <% } else { %>
+        <div class="control-group">
+            <label class="control-label">姓名:</label>
+
+            <div class="controls">
+                <input type="text" name="name" class="input-xlarge"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">邮箱:</label>
+
+            <div class="controls">
+                <input type="text" name="email" class="input-xlarge"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">网址：</label>
+
+            <div class="controls">
+                <input type="text" name="website" value="http://" class="input-xlarge"/>
+            </div>
+        </div>
+        <% } %>
+        <div class="control-group">
+            <label class="control-label">内容：</label>
+
+            <div class="controls">
+                <textarea name="content" rows="10" cols="80" class=""></textarea>
+            </div>
+        </div>
+        <br/>
+        <div class="form-actions">
+            <input type="submit" value="留言" class="btn btn-primary"/>
+        </div>
+    </form>
+</fieldset>

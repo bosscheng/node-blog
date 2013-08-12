@@ -1,0 +1,21 @@
+<%- include header %>
+<p>
+    作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    日期：<%= post.time.minute %> |
+    标签：
+    <% if(post.tags){%>
+    <% post.tags.forEach(function(tag, index){ %>
+    <% if(tag.tag){ %>
+    <a class="tag" href="/tags/<%= tag.tag %>"><%= tag.tag %></a>
+    <% } %>
+    <% }) %>
+    <% } %>
+</p>
+<div id="article-body">
+    <p><%- post.post %></p>
+    <hr>
+    <p class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+</div>
+
+<%- include comment %>
+<%- include footer %>
