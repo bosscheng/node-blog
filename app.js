@@ -7,13 +7,21 @@
 
 // 获取到核心模块 require('xxx')
 // 获取文件模块   require('/xxx')
-var express = require('express')
-    , routes = require('./routes')
-    , http = require('http')
-    , path = require('path')
-    , MongoStore = require('connect-mongo')(express)
-    , settings = require('./settings')
-    , flash = require('connect-flash');
+
+// express: web开发框架-核心模块
+var express = require('express');
+//引入路由
+var routes = require('./routes');
+// http-核心模块
+var http = require('http');
+// path-核心模块
+var path = require('path');
+// connent-mongo-连接mongo数据库
+var MongoStore = require('connect-mongo')(express);
+// setting-数据库连接设置
+var settings = require('./settings');
+//
+var flash = require('connect-flash');
 
 
 var app = express();

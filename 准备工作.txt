@@ -1,0 +1,13 @@
+## 需要安装的web开发框架-express
+
+npm install -g express
+
+## 创建一个项目
+// 使用的是ejs ,创建的名称叫blog
+express -e ejs blog
+
+## seajs 安装模版方式
+npm install
+
+## 启动项目
+node app
