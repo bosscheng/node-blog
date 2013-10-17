@@ -20,10 +20,10 @@ var path = require('path');
 var MongoStore = require('connect-mongo')(express);
 // setting-数据库连接设置
 var settings = require('./settings');
-//
+// flash-
 var flash = require('connect-flash');
 
-
+// 使用 express
 var app = express();
 
 // all environments

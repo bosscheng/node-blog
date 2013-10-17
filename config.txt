@@ -1,5 +1,5 @@
 开启app
-1.切换到 app所在的目录：D:\allWorkspace\WebstormProjects\nodeJsStudy\blog
+1.切换到 app所在的目录：D:\Documents\GitHub\blog
 2.执行 node app
 
 开启mongodb数据库
@@ -15,7 +15,7 @@ ps:
 还有的table有“posts”
 
 更新 package.json文件
-1.切换到 app所在的目录：D:\allWorkspace\WebstormProjects\nodeJsStudy\blog
+1.切换到 app所在的目录：D:\Documents\GitHub\blog
 2.执行 npm install
 
 
