@@ -19,5 +19,14 @@ ps:
 2.执行 npm install
 
 
+## 安装 MongoDB
+
+进入目录  D:\Documents\GitHub\blog
+cd  D:\Documents\GitHub\blog
+
+执行：设置blog文件作为我们的工程并启动。
+mongod -dbpath d:\mongodb\blog
+
+
 
 

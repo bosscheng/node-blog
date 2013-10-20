@@ -30,19 +30,24 @@ var app = express();
 // app.set(name,value);
 app.set('port', process.env.PORT || 3000);
 // __dirname is global object
-// 使用模版引擎
+// 使用模版引擎 ，解析文件存放在views文件夹中
 app.set('views', __dirname + '/views');
 // setting view engine is ejs
 app.set('view engine', 'ejs');
 // 使用flash模块
+// 使用flash模块来实现页面的通知和错误信息的提示。
+// flash 是在session中存储信息的特定区域，信息写入flash，
+// 下一次显示完毕之后就会被清楚。
 app.use(flash());
 // user favicon icon
 app.use(express.favicon());
 //show logger
+// 在终端显示日志
 app.use(express.logger('dev'));
 // 用来解析请求体的，application/json application/x-www-form-urlencoded multipart/form-date
 app.use(express.bodyParser());
 // help POST request
+//connect内部中间件，可以协助POST请求，伪装PUT,DELETE请求，
 app.use(express.methodOverride());
 // 使用cookieParser ：cookie解析的中间件
 app.use(express.cookieParser());
@@ -62,11 +67,14 @@ app.use(express.session({
     })
 }));
 // user router
+// 应用解析路由的规则
 app.use(app.router);
-
+// connect 中间件，设置根目录下面的public文件夹为 images,css,js等静态文件
+// 在页面上引用的时候默认是/public 目录开始的。
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
+// 如果是开发环境下面的错误，输出错误信息。
 if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }

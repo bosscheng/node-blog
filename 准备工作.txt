@@ -12,3 +12,9 @@ npm install
 ## 启动项目
 node app
 
+
+## 安装 Robomongo
+## 作为MongoDB管理工具，支持shell查询。
+网站： http://www.robomongo.org/
+
+

@@ -6,10 +6,11 @@
 
 
 // crypto 用来生成散列值加密密码
-var crypto = require('crypto'),
-    User = require('../models/user.js'),
-    Post = require('../models/post.js'),
-    Comment = require('../models/comment.js');
+// crypto 是node.js的核心模块
+var crypto = require('crypto');
+var User = require('../models/user.js');
+var Post = require('../models/post.js');
+var Comment = require('../models/comment.js');
 
 module.exports = function (app) {
 
@@ -325,8 +326,8 @@ module.exports = function (app) {
     });
     // 当访问的url不存在的时候，跳转到404页面
     /*app.get('*', function (req, res) {
-        res.render('404');
-    });*/
+     res.render('404');
+     });*/
 
 };
 
