@@ -30,3 +30,4 @@ mongod -dbpath d:\mongodb\blog
 
 
 
+

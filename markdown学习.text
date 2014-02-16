@@ -1,0 +1,159 @@
+## 标题
+
+this is an H1
+=============
+
+this is an h2
+-------------
+
+## h1,h2,h3...
+
+# this is a h1
+## this is a h2
+###### this is a h6
+
+## blockquotes
+> this is blockquotes .......
+
+## 区块也是可以嵌套的
+
+> this is a first leval of quoting
+>
+>> this is nested blockquotes
+>
+> back to the first leval
+
+## 案例
+
+> ## 这个是一个标题
+>
+>1.   这个是第一行列表项
+>2.   这个是第二行列表项
+>
+> 输出一些例子代码
+>
+> return xxxxxx
+
+
+## 列表
+
+## 无序（使用星号，加号，或者建号作为列表标记）
+* red
+* green
+* blue
+-----------------
++ red
++ green
++ blue
+------------------
+- red
+- green
+- blue
+## 有序(使用数字加上一个英文句号)
+
+1. red
+2. bitch
+3. parsh
+
+##  代码区块
+
+## 只需要简单的四个空格或者一个制表符就可以了。代码区块会一直持续到没有缩进的那一行或者文件结尾
+
+在代码区块里面使用 ， & 、< 和 > 会自动的转化为html实体
+
+## 分割线
+
+在一行中使用三个以上的星号，减号，底线来建立一个分割线，行内不能有其他东西
+
+## 区块元素
+
+## 行内式
+this is [an example](http:// example.com/"title") inner link
+
+[this link](http:// example.net/) has no title attribute
+##参考式
+
+this is [an example][id] reference-style link
+
+[id]:http:// example.com/ "optional title here"
+
+## 隐式链接
+[google][]
+
+
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+
+
+I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        "Google"
+  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+  [msn]:    http://search.msn.com/    "MSN Search"
+
+
+
+<p>I get 10 times more traffic from <a href="http://google.com/"
+title="Google">Google</a> than from
+<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
+or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+
+
+## 强调
+
+使用*(星号) 或者 _(底线)作为标记强调字词的符号
+使用一个就会被转换成em 
+使用两个就会被转换成strong
+
+*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+
+
+##  图片
+## 行内式
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+
+一个惊叹号 !
+接着一个方括号，里面放上图片的替代文字
+接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 'title' 文字。
+
+## 参考式
+![Alt text][id]
+[id]: url/to/image  "Optional title attribute"
+
+
+## 自动链接
+
+<http://example.com/>
+
+
+## 反斜杠
+\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+
+
+
+
+

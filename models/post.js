@@ -25,10 +25,10 @@ Post.prototype.save = function (callback) {//存储一篇文章及其相关信�
     var date = new Date();
     //存储各种时间格式，方便以后扩展
     var time = {
-        date: date,
-        year: date.getFullYear(),
-        month: date.getFullYear() + "-" + (date.getMonth() + 1),
-        day: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate(),
+        date: date,  // 真个data类型
+        year: date.getFullYear(), // 年
+        month: date.getFullYear() + "-" + (date.getMonth() + 1),  // 年-月
+        day: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate(), // 年-月-日
         minute: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes()
     }
     //要存入数据库的文档
